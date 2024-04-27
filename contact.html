@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preload" href="main.css" as="style">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+<!--    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+    <title>Story</title>
+</head>
+<body>
+<header>
+    <div class="menu ">
+        <!--        <a class="icon" href="#"><img alt="icon footer" src="images/icon.jpg"/></a>-->
+        <a class="word" href="index.html">N<ion-icon name="logo-xing"></ion-icon>truyen</a>
+        <ul class="main-menu">
+            <li><a href="#">TRUYỆN NỔI BẬT</a></li>
+            <li><a href="#">LỊCH SỬ</a></li>
+            <li><a href="contact.html">ĐÓNG GÓP Ý KIẾN</a></li>
+
+        </ul>
+        <div class="search-input">
+            <input type="text" placeholder="Tìm truyện">
+        </div>
+        <div class="register">
+            <!-- <a href="#">Đăng kí</a> -->
+            <a href="indexlogin.html">Đăng nhập</a>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="contact-information ">
+
+                <div class="box">
+                    <div class="header">
+                        <h3 class="heading"> <ion-icon name="cloud-upload"></ion-icon>ĐÓNG GÓP Ý KIẾN </h3>
+                    </div>
+                    <form method="post" action="#">
+
+                        <div class="form-group">
+                            <label for="contact-company">Họ và tên
+                            </label>
+                            <input type="text" class="form-control" id="contact-company" placeholder="Nhập họ và tên của bạn ">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-job">Email 
+                            </label>
+                            <input type="text" class="form-control" id="contact-job" placeholder="Email đăng ký tài khoản của bạn">
+                        </div>
+
+                        <h3>Những điều cần cải thiện</h3>
+                        <div class="checkbox-list">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="1">
+                            <label for="vehicle1"> Tốc độ tải trang (quá chậm,...)</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="2">
+                            <label for="vehicle2"> Chất lượng hình ảnh (ảnh mờ, chất lượng thấp)    </label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="3">
+                            <label for="vehicle3"> Giao diện website (bố cục xấu, ...) </label><br>
+                            <input type="checkbox" id="vehicle4" name="vehicle3" value="4">
+                            <label for="vehicle3"> Nội dung truyện (thể loại, số lượng, độ cập nhật…)</label><br>
+                            <input type="checkbox" id="vehicle5" name="vehicle3" value="5">
+                            <label for="vehicle3"> Chất lượng dịch thuật</label><br>
+                            <input type="checkbox" id="vehicle6" name="vehicle3" value="6">
+                            <label for="vehicle3"> Quảng cáo (quá nhiều/ nội dung quảng cáo không phù hợp…)</label><br>
+                            <input type="checkbox" id="vehicle7" name="vehicle3" value="7">
+                            <label for="vehicle3"> Lỗi kỹ thuật (không tải được hình ảnh, không tải được trang…)</label><br>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="label-required" for="Additional">Ý kiến khác của bạn</label>
+                            <textarea class="form-control" rows="5" id="Additional" placeholder="  ">
+							</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-follow">Gửi góp ý</button>
+                    </form>
+                </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="menu-footer">
+        <a class="type" href="index.html"><img alt="icon footer" src="images/kindpng.png"/></a>
+    </div>
+    <div class="menu-footer">
+        <div class="group-tag">
+            <a href="#" class="btn-tag">Truyện tranh hay</a>
+            <a href="#" class="btn-tag">Ngontinh</a>
+            <a href="#" class="btn-tag">Truyện tranh mới</a>
+            <a href="#" class="btn-tag">Đọc truyện tranh</a>
+            <a href="#" class="btn-tag">Manga</a>
+            <a href="#" class="btn-tag">Tutientruyen</a>
+            <a href="#" class="btn-tag">Trinh thám</a>
+            <a href="#" class="btn-tag">Truyện tranh</a>
+            <a href="#" class="btn-tag">Onepiece</a>
+            <a href="#" class="btn-tag">Dragonball</a>
+            <a href="#" class="btn-tag">Truyện tranh</a>
+            <a href="#" class="btn-tag">Hành động</a>
+        </div>
+        <div class="contact">
+            <p>Email: nktruyen@gmail.com</p>
+            <p>Chính sách bảo mật</p>
+        </div>
+    </div>
+
+
+
+</footer>
+
+<script src="js/jquery.js"></script>
+<script type='text/javascript' src='js/slick.min.js'></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type='text/javascript' src='js/main.js'></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preload" href="main.css" as="style">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css"/>
+
+    <title>Story</title>
+</head>
+<body>
+<header >
+    <div class="menu">
+        <!--        <a class="icon" href="#"><img alt="icon footer" src="images/icon.jpg"/></a>-->
+        <a class="word" href="index.html">N<ion-icon name="logo-xing"></ion-icon>truyen</a>
+        <ul class="main-menu">
+            <li><a href="#"> TRUYỆN NỔI BẬT</a></li>
+            <li><a href="#">LỊCH SỬ</a></li>
+            <li><a href="contact.html">ĐÓNG GÓP Ý KIẾN</a></li>
+        </ul>
+        <div class="search-input">
+            <input type="text" placeholder="Tìm truyện">
+        </div>
+        <div class="register">
+            
+            <a href="indexlogin.html">Đăng nhập</a>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="story-card">
+        <div class="image-card">
+            <img alt="card-image" src="images/anhtruyen7.jpg">
+        </div>
+        <div class="detail-card">
+            <h2 class="title-story">Cuộc xâm lăng của binh đoàn Robot</h2>
+
+                 <span><ion-icon name="person-sharp"></ion-icon>Tác giả : Fujiko F. Fujio</span>
+                <span><i class="fa-solid fa-plus"></i>Tên khác: Cuộc xâm lăng của binh đoàn Robot</span>
+                <span><ion-icon name="radio-sharp"></ion-icon>Tình trạng: Đang cập nhật</span>
+                <span><ion-icon name="thumbs-up"></ion-icon>Lượt thích :  <span id="numberDisplay2"> Nhấn   <span class="highlight">thích</span>để xem </span></span>
+                <span><ion-icon name="eye-sharp"></ion-icon> Lượt xem : <span id="numberDisplay">0</span></span>
+            <div class="group-tag">
+                <a class="tag" href="#">Anime</a>
+                <a class="tag" href="#">Doraemon</a>
+                <a class="tag" href="#">Drama</a>
+                <a class="tag" href="#">Action</a>
+                <a class="tag" href="#">Fantasy</a>
+            </div>
+            <div class="group-btn">
+                <a href="Binhdoan.html" class="btn-view btn"><span><ion-icon name="images"></ion-icon></span>Đọc truyện</a>
+                <a id="increaseButton2" href="#" class="btn-like btn"> <span><ion-icon name="heart-sharp"></ion-icon></span>   Yêu thích</a>
+                <a href="#" class="btn-follow btn"> <span><ion-icon name="add-circle-sharp"></ion-icon></span>Theo dõi</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="box-information">
+        <h3 class="heading-text">
+            <span><ion-icon name="bulb-sharp"></ion-icon></span> Giới thiệu
+        </h3>
+        <p class="des-text">Nobita tình cờ “nhặt” được chú robot khổng lồ, còn chưa kịp vui mừng bao lâu thì đã phải đối diện với một cuộc xâm lăng của binh đoàn robot trên toàn thế giới. Cùng Doremon và nhóm bạn lớp 4E, tất cả đã chiến đấu vô cùng dũng cảm và thông minh để ngăn chặn thảm họa diệt vong. Những tưởng cuộc chiến không cân sức ấy sẽ khiến nhóm bạn nhận lấy thất bại. Nhưng không, vào phút cuối, kỳ tích xảy ra. Không ai ngờ công sức lớn nhất lại đến từ một nhân vật phản diện…
+
+        </p>
+    </div>
+    <div class="form">
+        <h3 class="heading-text">
+            <span><ion-icon name="chatbox-ellipses-sharp"></ion-icon></span> Bình luận
+        </h3>
+            <textarea type="text" id="commentInput" name="story" class="text-box" >
+
+</textarea>
+        <div class="cmt-btn">
+            <button class="btn-comment btn-follow btn" onclick="addComment()"> <ion-icon name="paper-plane-sharp"></ion-icon>Add Comment</button>
+        </div>
+
+        <h2> <ion-icon name="chatbubbles-sharp"></ion-icon> Các bình luận đọc giả</h2>
+
+
+        <ul id="commentsList"></ul>
+
+    </div>
+</div>
+
+<footer>
+    <div class="menu-footer">
+        <a class="type" href="index.html"><img alt="icon footer" src="images/kindpng.png"/></a>
+    </div>
+    <div class="menu-footer">
+        <div class="group-tag">
+            <a href="#" class="btn-tag">Truyện tranh hay</a>
+            <a href="#" class="btn-tag">Ngontinh</a>
+            <a href="#" class="btn-tag">Truyện tranh mới</a>
+            <a href="#" class="btn-tag">Đọc truyện tranh</a>
+            <a href="#" class="btn-tag">Manga</a>
+            <a href="#" class="btn-tag">Tutientruyen</a>
+            <a href="#" class="btn-tag">Trinh thám</a>
+            <a href="#" class="btn-tag">Truyện tranh</a>
+            <a href="#" class="btn-tag">Onepiece</a>
+            <a href="#" class="btn-tag">Dragonball</a>
+            <a href="#" class="btn-tag">Truyện tranh</a>
+            <a href="#" class="btn-tag">Hành động</a>
+        </div>
+        <div class="contact">
+            <p>Email: nktruyen@gmail.com</p>
+            <p>Chính sách bảo mật</p>
+        </div>
+    </div>
+
+
+
+</footer>
+
+<script src="js/jquery.js"></script>
+<script type='text/javascript' src='js/slick.min.js'></script>
+<script type='text/javascript' src='js/main.js'></script>
+<script>
+
+
+function increaseNumber2() {
+       
+       var currentNumber = parseInt(localStorage.getItem("currentNumber2")) || 0;
+
+     
+       var newNumber2 = currentNumber + 1;
+
+    
+       document.getElementById("numberDisplay2").innerText = newNumber2;
+
+
+       localStorage.setItem("currentNumber2", newNumber2);
+   }
+
+   document.getElementById("increaseButton2").onclick = increaseNumber2;
+
+
+
+ 
+   function increaseNumber() {
+       var numberElement = document.getElementById("numberDisplay");
+       var currentNumber = parseInt(numberElement.innerText);
+       var newNumber = currentNumber + 1;
+       numberElement.innerText = newNumber;
+
+
+       localStorage.setItem("currentNumber", newNumber);
+   }
+
+
+
+   function addComment() {
+       var commentInput = document.getElementById('commentInput').value;
+       if (commentInput.trim() !== '') {
+           var comments = localStorage.getItem('comments');
+           comments = comments ? JSON.parse(comments) : [];
+           comments.push(commentInput);
+           localStorage.setItem('comments', JSON.stringify(comments));
+           displayComments();
+           document.getElementById('commentInput').value = '';
+       } else {
+           alert('Vui lòng nhập bình luận của bạn');
+       }
+   }
+
+   function displayComments() {
+       var commentsList = document.getElementById('commentsList');
+       commentsList.innerHTML = ''; // Clear previous comments
+       var comments = localStorage.getItem('comments');
+       comments = comments ? JSON.parse(comments) : [];
+       comments.forEach(function(comment) {
+           var li = document.createElement('li');
+           var img = document.createElement('img');
+           img.src = './././images/avt3.jpg'; // Đường dẫn đến hình ảnh của bạn
+           img.alt = 'Comment Image'; // Mô tả hình ảnh
+           img.className = 'comment-image'; // Thêm class vào ảnh
+           li.appendChild(img); // Thêm ảnh vào thẻ <li>
+
+           var textNode = document.createTextNode(comment);
+           li.appendChild(textNode); // Thêm nội dung bình luận vào thẻ <li>
+
+           li.classList.add('comment-item'); // Thêm class vào thẻ <li>
+
+           commentsList.appendChild(li);
+       });
+   }
+
+   window.onload = function() {
+       var currentNumber2 = localStorage.getItem("currentNumber2");
+       if (currentNumber2 !== null) {
+           document.getElementById("numberDisplay2").innerText = currentNumber2;
+       }
+       var currentNumber = localStorage.getItem("currentNumber");
+       if (currentNumber !== null) {
+
+           document.getElementById("numberDisplay").innerText = currentNumber;
+       }
+
+
+       increaseNumber();
+       displayComments();
+   };
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
